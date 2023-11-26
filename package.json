@@ -4,7 +4,8 @@
   },
   "scripts": {
     "test:e2e": "cypress run",
-    "deploy": "npm run test:e2e && vercel --prod"
+    "deploy": "npm run test:e2e && vercel --prod",
+    "start":"npx cypress open"
   }
   
 }
