@@ -1,21 +1,14 @@
 {
   "devDependencies": {
     "cypress-iframe": "^1.0.1",
+    "mocha": "^10.2.0",
     "start-server-and-test": "^2.0.3"
   },
   "scripts": {
-    "test:e2e": "cypress run",
-    "deploy": "npm run test:e2e && vercel --prod",
-    "start": "npx cypress open",
-    "test:e2e:open": "cypress open",
-    "build": "npm install && npm run build",
-    "build:vercel": "@vercel/static-build"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "cypress": "^13.6.0"
   }
- 
-    
-  
-  
 }
