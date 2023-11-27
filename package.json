@@ -6,9 +6,14 @@
   "scripts": {
     "test:e2e": "cypress run",
     "deploy": "npm run test:e2e && vercel --prod",
-    "start": "npx cypress open"
+    "start": "npx cypress open",
+    "test:e2e:open": "cypress open"
   },
   "dependencies": {
     "cypress": "^13.6.0"
   }
+ 
+    
+  
+  
 }
