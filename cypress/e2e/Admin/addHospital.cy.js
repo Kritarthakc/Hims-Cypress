@@ -16,7 +16,8 @@ describe('Hospital Tests', () => {
     cy.contains('Name').should('be.visible');
     cy.get('#title').type(data.hospitalName)
     cy.get('#address').type(data.address)
- cy.get('.ck-blurred').invoke('text', 'Your text here');
+    cy.get('.ck-blurred').type('Hello, World!');
+
 
     cy.get('#domain').type(data.subDomain)
     cy.get('#emergency_contact').type(data.emergencyContact)
@@ -31,7 +32,7 @@ describe('Hospital Tests', () => {
     //Address information
     cy.get('.css-q9mf9z-control > .css-yxo4uo').type(`${data.Province} {enter}`);
     cy.get(':nth-child(2) > .peer > .css-q9mf9z-control > .css-yxo4uo > .css-19bb58m').type(`${data.District} {enter}`);
-    cy.get('.mr-6 > .relative > .peer > .css-q9mf9z-control > .css-yxo4uo > .css-19bb58m').type(`${data.Municipality} {enter}`);
+    cy.get('.mr-6 > .relative > .peer > .css-q9mf9z-control > .css-yxo4uo > .css-19bb58m').type(`${data.roles} {enter}`);
 
     cy.get('.text-whiteText') .click()
 
