@@ -6,7 +6,7 @@
   "scripts": {
       "cypress:open": "cypress open",
       "cypress:run": "cypress run",
-    "build:vercel": "@vercel/static-build"
+     "vercel-build": "@vercel/static-build"
   },
   "dependencies": {
     "cypress": "^13.6.0"
