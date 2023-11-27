@@ -7,7 +7,9 @@
     "test:e2e": "cypress run",
     "deploy": "npm run test:e2e && vercel --prod",
     "start": "npx cypress open",
-    "test:e2e:open": "cypress open"
+    "test:e2e:open": "cypress open",
+    "build": "npm install && npm run build",
+    "build:vercel": "@vercel/static-build"
   },
   "dependencies": {
     "cypress": "^13.6.0"
